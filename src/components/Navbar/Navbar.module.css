@@ -1,0 +1,113 @@
+@import "../../vars.css";
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 61px;
+  z-index: 2;
+  margin: 0 10%;
+  perspective: 1000px; /* Adding perspective to the navbar */
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.menuBtn {
+  display: none;
+  cursor: pointer;
+}
+
+.menuBtn i {
+  font-size: 30px;
+  color: var(--color-text);
+}
+
+.menu {
+  display: flex;
+  perspective: 1000px; /* Adding perspective to the menu */
+}
+
+.navbarSlide .menuItems {
+  transform: translateX(-100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, visibility 0s 0.3s, opacity 0.3s ease-in-out;
+}
+
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style: none;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.menuItems a {
+  position: relative;
+  font-size: 25px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s, text-shadow 0.3s, color 0.3s;
+  transform-style: preserve-3d;
+}
+
+.menuItems a:hover {
+  transform: rotateX(10deg) rotateY(10deg) translateZ(10px) scale(1.1);
+  color: #00ff00; /* Change text color to neon green on hover */
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00; /* Neon effect */
+  background: none; /* Ensure no background color */
+}
+
+.menuOpen .menuItems {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 24px 33px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+  }
+}

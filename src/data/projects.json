@@ -1,0 +1,38 @@
+[
+  {
+    "title": "2PC Protocol",
+    "imageSrc": "projects/project.png",
+    "description": "This project demonstrates the importance of building fault-tolerant systems, as even a single node failure can cause the entire system to fail. It evaluates different types of failures, such as node failures and TC failures, showing the crucial role of the transaction coordinator in coordinating transactions between nodes and ensuring that they commit or abort in a consistent and reliable manner.",
+    "skills": ["Distributed Systems", "Fault Tolerance", "Transaction Management"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com",
+    "category": "Distributed Systems"
+  },
+  {
+    "title": "Variational Autoencoder on Breast Cancer Histopathology",
+    "imageSrc": "projects/project.png",
+    "description": "Developed a deep understanding of autoencoder architectures, focusing on data compression, reconstruction, and capturing the underlying structure of input data. Implemented a VAE model, incorporating an encoder, decoder, and a specialized loss function that balanced reconstruction error with a regularization term.",
+    "skills": ["Machine Learning", "Deep Learning", "Python", "TensorFlow/PyTorch"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com",
+    "category": "Machine Learning"
+  },
+  {
+    "title": "Camera Aid for Blind",
+    "imageSrc": "projects/project.png",
+    "description": "Developed a mobile-based camera vision system that can be used to create an independent application for visually challenged people. The system detects and measures distances of objects within a few meters, navigates on sidewalks on roads, recognizes texts on signboards, objects, etc., overcoming issues of cost, reliance, and usability.",
+    "skills": ["Computer Vision", "Mobile Development", "Accessibility Technology"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com",
+    "category": "Computer Vision"
+  },
+  {
+    "title": "Driver Drowsiness Detection",
+    "imageSrc": "projects/project.png",
+    "description": "Built a drowsy driver alert system using OpenCV to detect faces and eyes using a Haar-cascade classifier. Extracted features from eyes and the face region to predict the driver's status, enhancing road safety.",
+    "skills": ["OpenCV", "Machine Learning", "Computer Vision", "Python"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com",
+    "category": "Computer Vision"
+  }
+]

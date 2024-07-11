@@ -1,0 +1,37 @@
+[
+  {
+    "role": "Intern",
+    "organisation": "Oracle",
+    "startDate": "Jan, 2022",
+    "endDate": "Apr, 2022",
+    "experiences": [
+      "Learned about developing custom ERP modules using Oracle APEX and PL/SQL to automate business processes, enhancing operational efficiency.",
+      "Gained experience in integrating and testing ERP systems to ensure seamless data flow and functionality across business units."
+    ],
+    "imageSrc": "history/oracle.png"
+  },
+  {
+    "role": "Certification",
+    "organisation": "Intro to Machine Learning",
+    "startDate": "May, 2021",
+    "endDate": "",
+    "experiences": [],
+    "imageSrc": "certifications/ml.png"
+  },
+  {
+    "role": "Certification",
+    "organisation": "AWS Cloud Practitioner",
+    "startDate": "March, 2024",
+    "endDate": "",
+    "experiences": [],
+    "imageSrc": "certifications/aws.png"
+  },
+  {
+    "role": "Certification",
+    "organisation": "React Native",
+    "startDate": "May, 2020",
+    "endDate": "",
+    "experiences": [],
+    "imageSrc": "certifications/react_native.png"
+  }
+]

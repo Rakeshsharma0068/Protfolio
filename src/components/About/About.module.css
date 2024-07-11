@@ -1,0 +1,131 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutImage {
+  width: 35%;
+  margin-right: 20px;
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 1;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s, max-height 0.3s ease;
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+}
+
+.icon {
+  font-size: 3rem;
+  color: rgb(134, 174, 190);
+  margin-right: 30px; /* Increase the margin to separate the icon from the text */
+}
+
+.iconImage {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  margin-right: 30px; /* Increase the margin to separate the icon from the text */
+  filter: brightness(0) saturate(100%) invert(84%) sepia(98%) saturate(1294%) hue-rotate(166deg) brightness(93%) contrast(92%); /* Apply a bluish filter */
+}
+
+.aboutItemText {
+  flex: 1;
+}
+
+.aboutItemText h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.aboutItemText p {
+  font-size: 18px;
+  max-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 0.3s ease;
+  margin: 5px 0 0 0;
+}
+
+.aboutItemText p.collapsed {
+  max-height: 3em;
+}
+
+.aboutItemText p.expanded {
+  max-height: 100em;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+  }
+
+  .aboutItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
